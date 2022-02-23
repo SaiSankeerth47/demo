@@ -14,15 +14,12 @@ import os
 import datetime
 import calendar
 
-def sankeerth(getname):
-    print(getname)
 
 class index(APIView):
     
     
     def post(self,request):
         name=request.data['student']
-        sankeerth(name)
         return Response('post')
     def get(self,request):
-        return HttpResponse('get')
+        return HttpResponse('get sankeerth')
